@@ -1,0 +1,216 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for piranha305_animatedcounter.",
+  "text": {
+    "behaviors": {
+      "piranha305_animatedcounter": {
+        "name": "Animated Counter",
+        "description": "A simple counter that animates from one number to another",
+        "help-url": "https://www.construct.net",
+        "aceCategories": {
+          "Config": "Config",
+          "General": "General",
+          "Stop": "Stop"
+        },
+        "properties": {
+          "initialNumber": {
+            "name": "Initial Number",
+            "desc": "The initial number"
+          },
+          "updateInterval": {
+            "name": "Update Interval",
+            "desc": "Update interval in milliseconds, how often the counter will update"
+          },
+          "stepSize": {
+            "name": "Step Size",
+            "desc": "how much to increment/decrement by each update tick"
+          },
+          "useBBCodeTemplate": {
+            "name": "Use BBCode Template",
+            "desc": "If true, the BBCode template will be used to format the number"
+          },
+          "bbcodeTemaplate": {
+            "name": "BBCode Template",
+            "desc": "The template for the BBCode, %v will be replaced with the counter value"
+          }
+        },
+        "actions": {
+          "SetBBCodeTemplate": {
+            "list-name": "Set BBCode Template",
+            "display-text": "Set {my} BBCode Template to {0}",
+            "description": "Set the BBCode template to format the number",
+            "params": {
+              "template": {
+                "name": "Template",
+                "desc": "The template for the BBCode, %v will be replaced with the counter value"
+              }
+            }
+          },
+          "SetStepSize": {
+            "list-name": "Set Step Size",
+            "display-text": "Set {my} step size to {0}",
+            "description": "Set the step size of the counter, the amount to increment or decrement by each tick",
+            "params": {
+              "stepSize": {
+                "name": "Step Size",
+                "desc": "The step size of the counter"
+              }
+            }
+          },
+          "SetUopdateInterval": {
+            "list-name": "Set Counter Update Interval",
+            "display-text": "Set {my} Counter Update Interval to {0} milliseconds",
+            "description": "Set the update interval of the counter, how often the counter will update in milliseconds",
+            "params": {
+              "milliseconds": {
+                "name": "Milliseconds",
+                "desc": "The speed the counter will update"
+              }
+            }
+          },
+          "SetUseBBCodeTemplate": {
+            "list-name": "Set Use BBCode Template",
+            "display-text": "Set {my} Use BBCode Template to {0}",
+            "description": "Set if the BBCode template should be used to format the number",
+            "params": {
+              "use": {
+                "name": "Use",
+                "desc": "If true, the BBCode template will be used to format the number"
+              }
+            }
+          },
+          "Add": {
+            "list-name": "Add",
+            "display-text": "Add {0} to {my}",
+            "description": "Add value to the counter",
+            "params": {
+              "value": {
+                "name": "Value",
+                "desc": "The value to add"
+              }
+            }
+          },
+          "SetTarget": {
+            "list-name": "Set Target",
+            "display-text": "Set {my} target to {0}",
+            "description": "Set the target value of the counter, this will start the animation",
+            "params": {
+              "target": {
+                "name": "Target",
+                "desc": "The target value"
+              }
+            }
+          },
+          "SetValue": {
+            "list-name": "Set Value",
+            "display-text": "Set {my} to {0}",
+            "description": "Set the initial value of the counter, instantly",
+            "params": {
+              "value": {
+                "name": "Value",
+                "desc": "The value to set"
+              }
+            }
+          },
+          "SetValueAndTarget": {
+            "list-name": "Set Value and Target",
+            "display-text": "Set {my} to {0} and target to {1}",
+            "description": "Set the initial value of the counter and the target value",
+            "params": {
+              "value": {
+                "name": "Value",
+                "desc": "The value to set"
+              },
+              "target": {
+                "name": "Target",
+                "desc": "The target value"
+              }
+            }
+          },
+          "Subtract": {
+            "list-name": "Subtract",
+            "display-text": "Subtract {0} from {my}",
+            "description": "Subtract value from the counter",
+            "params": {
+              "value": {
+                "name": "Value",
+                "desc": "The value to subtract"
+              }
+            }
+          },
+          "ForceStop": {
+            "list-name": "Force Stop",
+            "display-text": "{my} Force Stop",
+            "description": "Force stop the counter, set value to target",
+            "params": {}
+          },
+          "Stop": {
+            "list-name": "Stop",
+            "display-text": "{my} Stop",
+            "description": "Stop the counter",
+            "params": {}
+          }
+        },
+        "conditions": {
+          "IsAnimating": {
+            "list-name": "Is Animating",
+            "display-text": "{my} is animating",
+            "description": "Check if the counter is animating",
+            "params": {}
+          },
+          "IsDecreasing": {
+            "list-name": "Is Decreasing",
+            "display-text": "{my} is decreasing",
+            "description": "Check if the counter is decreasing",
+            "params": {}
+          },
+          "IsIncreasing": {
+            "list-name": "Is Increasing",
+            "display-text": "{my} is increasing",
+            "description": "Check if the counter is increasing",
+            "params": {}
+          },
+          "OnAnimationEnd": {
+            "list-name": "On Animation End",
+            "display-text": "{my} On animation end",
+            "description": "Triggered when the counter stops animating",
+            "params": {}
+          },
+          "OnAnimationStart": {
+            "list-name": "On Animation Start",
+            "display-text": "{my} On animation start",
+            "description": "Triggered when the counter starts animating",
+            "params": {}
+          }
+        },
+        "expressions": {
+          "StepSize": {
+            "translated-name": "StepSize",
+            "description": "Get the step size of the counter",
+            "params": {}
+          },
+          "UpdateInterval": {
+            "translated-name": "UpdateInterval",
+            "description": "Get the counter update interval",
+            "params": {}
+          },
+          "CurrentValue": {
+            "translated-name": "CurrentValue",
+            "description": "Get the current value of the counter",
+            "params": {}
+          },
+          "Diff": {
+            "translated-name": "Diff",
+            "description": "Get the difference between the current and target value",
+            "params": {}
+          },
+          "TargetValue": {
+            "translated-name": "TargetValue",
+            "description": "Get the target value of the counter",
+            "params": {}
+          }
+        }
+      }
+    }
+  }
+}
