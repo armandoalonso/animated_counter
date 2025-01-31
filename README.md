@@ -1,4 +1,4 @@
-<img src="./examples/cover.gif" width="150" /><br>
+<img src="./examples/cover.png" width="150" /><br>
 # Animated Counter
 <i>A simple counter that animates from one number to another</i> <br>
 ### Version 1.0.0.0
